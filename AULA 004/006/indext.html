@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IA do Futuro</title>
+</head>
+<body>
+    <link rel="stylesheet" href="indext.css"> 
+    <link rel="stylesheet" href="main.py">
+    <h1>Bem-vindo à IA do Futuro</h1>
+    
+    <form>
+        <label for="userInput">Digite algo:</label>
+        <input type="text" id="userInput" name="userInput" required>
+        <button type="button" onclick="processInput()">Enviar</button>
+    </form>
+
+    <p id="output"></p>
+
+    <script>
+        function processInput() {
+            var userInput = document.getElementById("userInput").value;
+            
+            // Aqui você poderia adicionar lógica para interagir com a IA.
+            // Este é apenas um exemplo simples.
+            var output = "A IA diz: " + userInput.toUpperCase();
+
+            document.getElementById("output").innerText = output;
+    
+    </script>
+</body>
+</html>

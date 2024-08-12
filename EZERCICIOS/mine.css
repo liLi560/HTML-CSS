@@ -1,0 +1,30 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  h1, h2 {
+    color: #990033; /* Azul Cordo Saite Red */
+  }
+  
+  #video-form {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  #video-form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #video-form input, textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  #video-preview {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 200px

@@ -1,0 +1,1 @@
+print("quero ser rico")

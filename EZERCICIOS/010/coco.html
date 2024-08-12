@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publicar Vídeo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        .form-container h2 {
+            margin-bottom: 20px;
+            font-size: 24px;
+            text-align: center;
+        }
+        .form-container label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        .form-container input[type="text"],
+        .form-container textarea,
+        .form-container input[type="file"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        .form-container input[type="submit"] {
+            background-color: #5cb85c;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+        .form-container input[type="submit"]:hover {
+            background-color: #4cae4c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Publicar Vídeo</h2>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+        <label for="title">Título do Vídeo:</label>
+        <input type="text" id="title" name="title" placeholder="Insira o título do vídeo" required>
+
+        <label for="description">Descrição:</label>
+        <textarea id="description" name="description" rows="4" placeholder="Insira uma descrição do vídeo" required></textarea>
+
+        <label for="video">Escolha o vídeo:</label>
+        <input type="file" id="video" name="video" accept="video/*" required>
+
+        <input type="submit" value="Publicar Vídeo">
+    </form>
+</div>
+
+</body>
