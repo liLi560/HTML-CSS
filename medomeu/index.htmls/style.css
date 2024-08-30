@@ -1,0 +1,40 @@
+
+header{
+    background-color: darkred;
+    border: 10px;
+    box-shadow: 1px 1px 1px black;
+    width: 1500px;
+    height: 100px;
+    min-width: 10%;
+    padding-top: 40px;
+    border-radius: 10px;
+    
+}
+h1{
+    background-color: brown;
+    color: darkgrey;
+
+}
+div{
+    margin: auto;
+
+}
+body{
+    background-image: linear-gradient(to bottom,darkred,black );
+}
+main{
+    margin: auto;
+    width: 700px;
+    height: 700px;
+    background-image: linear-gradient(to bottom,black,blue);
+    border-radius: 10px;
+
+}
+p{
+    text-align: center;
+}
+img{
+    width: 600px;
+    margin: auto;
+    height: 300px;
+}
