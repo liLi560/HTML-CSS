@@ -3,20 +3,30 @@
     margin: 0px;
     padding: 0px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 html,body{
     background-color: darkgray;
-    min-height: 100vh;
-    
-    
+    min-height: 100vh;      
+    font-family: var(--fonte);
+}
+:root{
+    --fonte: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: "Passion One", sans-serif;
+    --fonte3: "Pacifico","cursive";
 }
 header{
     background-color: black;
     text-align: center;
     color: aliceblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 header>h1{
+    font-family: var(--fonte2);
     padding: 50px;
-    font-variant: small-caps
+    font-variant: small-caps;
+    font-size: 3em;
+    
 }
 header>p{
     padding: bottom 50px; ;
@@ -40,8 +50,18 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
-}
+    font-family: var(--fonte3);
+    font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
 
+
+
+}
+section>p{
+    padding-bottom: 2em;
+}
 section.normal{
     background-color: white;
     color: black;
@@ -50,9 +70,19 @@ section.normal{
 section.imaguem{
     background-color: rgb(47, 45, 45);
     color: white;
+    background-size: contain;
+    box-shadow: inset 6px 6px 13px black;
+    background-attachment: fixed;
+    
 
 }
 section.imaguem>p{
     background-color: rgba(0, 0, 0, 0.111);
     width: 400px;
+}
+section#img01{
+    background-image: url(insect-4489864_1280.jpg);
+}
+section#img02{
+    background-image: url(vintage-pocket-watch-7439233_1280.jpg);
 }
